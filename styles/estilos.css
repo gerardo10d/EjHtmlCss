@@ -1,0 +1,18 @@
+/* Para eliminar estilos que coloca el navegador */
+body {
+    margin: 0px;
+}
+
+/* Ninguna lista ul tenga bullets */
+
+ul {
+    list-style: none;
+    padding: 0px; /* Para eliminar estilo que coloca el navegador */
+    margin: 0px; /* Para eliminar estilo que coloca el navegador */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
