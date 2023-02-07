@@ -21,17 +21,32 @@ ul {
     height: 50px;
 }
 
-.mainButton {
-    background-color: mediumseagreen;
-    color: white;
+.button {
     border: 0px;
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: bolder;
 }
 
-.mainButton:hover {
+.button:hover {
     cursor: pointer; /* para que aparezca la mano del mouse al pasarla por encima del botón */
-    box-shadow: 1px 1px green; /* sombra verde 1px hacia abajo y hacia la derecha */
     transform: scale(1.1); /* escalar al 1.1, es decir, agrandar 10 % */
+}
+
+.mainButton {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.mainButton:hover {
+    box-shadow: 1px 1px green; /* sombra verde 1px hacia abajo y hacia la derecha */
+}
+
+.secondaryButton {
+    background-color: darkblue;
+    color: white;
+}
+
+.secondaryButton:hover {
+    box-shadow: 1px 1px cyan;
 }
