@@ -50,3 +50,19 @@ ul {
 .secondaryButton:hover {
     box-shadow: 1px 1px cyan;
 }
+
+.buscar {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.buscar:focus-within { /* cambiar cuando se hace focus adentro del elemento */
+    border: 1px solid blue;
+}
+
+.buscar > input {
+    border: none; /* borde normal */
+    outline: none; /* borde cuando está en focus */
+}
