@@ -75,18 +75,52 @@ ul {
     color: blue;
 }
 
+.tituloPagina {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
 .breedCardContainer {
     display: flex;
     gap: 10px;
 }
 
+.breedCard {
+    background-color: rgb(78, 78, 90);
+    box-shadow: 5px 10px 5px rgb(231, 231, 231);
+    border-radius: 10px;
+}
+
+.breedTitle {
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
 .contenedorImagen {
     width: 240px;
     height: 350px;
-    display: flex;
+    display: flex; /* Para que funcione el cover del selector .contenedorImagen > img */
 }
 
 .contenedorImagen > img {
     object-fit: cover;
     width: 100%;
+    border-radius: 10px 10px 0px 0px; /* Aplicar radio en las dos esquinas de arriba */
+    margin-bottom: 10px;
+}
+
+.contenedorImagen:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.barraReacciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+    color: white;
 }
