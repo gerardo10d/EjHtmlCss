@@ -1,0 +1,126 @@
+/* Para eliminar estilos que coloca el navegador */
+body {
+  margin: 0px;
+}
+
+/* Ninguna lista ul tenga bullets */
+
+ul {
+  list-style: none;
+  padding: 0px; /* Para eliminar estilo que coloca el navegador */
+  margin: 0px; /* Para eliminar estilo que coloca el navegador */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(207, 208, 211);
+  border-bottom: solid 1px gray;
+  box-shadow: 1px 1px gray;
+}
+
+.logo {
+  height: 50px;
+}
+
+.button {
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.button:hover {
+  cursor: pointer; /* para que aparezca la mano del mouse al pasarla por encima del botón */
+  transform: scale(1.1); /* escalar al 1.1, es decir, agrandar 10 % */
+}
+
+.mainButton {
+  background-color: mediumseagreen;
+  color: white;
+}
+
+.mainButton:hover {
+  box-shadow: 1px 1px green; /* sombra verde 1px hacia abajo y hacia la derecha */
+}
+
+.secondaryButton {
+  background-color: darkblue;
+  color: white;
+}
+
+.secondaryButton:hover {
+  box-shadow: 1px 1px cyan;
+}
+
+.buscar {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.buscar:focus-within { /* cambiar cuando se hace focus adentro del elemento */
+  border: 1px solid blue;
+}
+
+.buscar > input {
+  border: none; /* borde normal */
+  outline: none; /* borde cuando está en focus */
+}
+
+.iconoBusqueda:hover {
+  color: blue;
+}
+
+.tituloPagina {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+.breedCardContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.breedCard {
+  background-color: rgb(78, 78, 90);
+  box-shadow: 5px 10px 5px rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.breedTitle {
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.contenedorImagen {
+  width: 240px;
+  height: 350px;
+  display: flex; /* Para que funcione el cover del selector .contenedorImagen > img */
+}
+
+.contenedorImagen > img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px; /* Aplicar radio en las dos esquinas de arriba */
+  margin-bottom: 10px;
+}
+
+.contenedorImagen:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.barraReacciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 10px 10px 10px;
+  color: white;
+}
