@@ -3,6 +3,7 @@ import borderCollie from "media/borderCollie.jpg";
 import rhodesian from "media/rhodesian.jpg";
 import CardRazasPerros from "components/CardRazasPerros";
 
+
 function Index() {
   return (
     <div>

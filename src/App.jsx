@@ -3,8 +3,7 @@ import RhodesianInfoPage from "pages/rhodesian";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link,
+  Route
 } from "react-router-dom"; /* importar router */
 
 import "styles/styles.css";
@@ -14,7 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/rhodesian" element={<RhodesianInfoPage />} />
+          <Route path="rhodesian" element={<RhodesianInfoPage />} />
           <Route path="/" element={<Index />} />
         </Routes>
       </Router>
