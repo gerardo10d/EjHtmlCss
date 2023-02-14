@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Layout>
-          <Routes>
+        <Routes>
+          <Layout>
             <Route path="rhodesian" element={<RhodesianInfoPage />} />
             <Route path="/" element={<Index />} />
-          </Routes>
-        </Layout>
+          </Layout>
+        </Routes>
       </Router>
     </div>
   );

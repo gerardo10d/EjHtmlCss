@@ -5,7 +5,6 @@ import CardRazasPerros from "components/CardRazasPerros";
 
 function Index() {
   return (
-      <main>
         <section>
           <h1 className="tituloPagina">Razas de Perros</h1>
           <ul className="breedCardContainer">
@@ -13,7 +12,6 @@ function Index() {
             <CardRazasPerros nombreRaza="Rhodesian" imagen={rhodesian} />
           </ul>
         </section>
-      </main>
   );
 }
 
