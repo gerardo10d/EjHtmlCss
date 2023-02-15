@@ -1,5 +1,6 @@
-import Layout from "components/Layout";
+import Layout from "layouts/Layout";
 import Index from "pages";
+import BorderCollie from "pages/bordercollie";
 import RhodesianInfoPage from "pages/rhodesian";
 import {
   BrowserRouter as Router,
@@ -13,12 +14,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Routes>
-          <Layout>
+        <Layout>
+          <Routes>
+            <Route path="bordercollie" element={<BorderCollie />} />
             <Route path="rhodesian" element={<RhodesianInfoPage />} />
             <Route path="/" element={<Index />} />
-          </Layout>
-        </Routes>
+          </Routes>
+        </Layout>
       </Router>
     </div>
   );
