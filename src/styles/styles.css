@@ -15,9 +15,11 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow-y: hidden; /* para que quite el scroll de todo el contenedor */
 }
 .mainContainer > main {
   height: 100%; /*Para que ocupe el 100% del espacio disponible, manda el footer al fondo*/
+  overflow-y: scroll; /* para que coloque el scroll solo para el main, sin afectar al header y al footer */
 }
 .mainContainer > footer {
   background-color: darkgrey;
@@ -96,7 +98,9 @@ ul {
 
 .breedCardContainer {
   display: flex;
+  margin: 10px;
   gap: 10px;
+  flex-wrap: wrap; /* para que ajuste hacia abajo los elementos y no se  desborden hacia la derecha */
 }
 
 .breedCard {
